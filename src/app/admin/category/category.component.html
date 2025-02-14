@@ -1,0 +1,14 @@
+<div class="container">
+    <table class="table table-hover table-striped">
+      <tr>
+        <th>#</th>
+        <th>Kategori Adı</th>
+        <th>İşlemler</th>
+      </tr>
+      <tr *ngFor="let item of categoryList">
+        <td>{{item.id}}</td>
+        <td>{{item.categoryName}}</td>
+        <td><a href="#">Sil</a></td>
+      </tr>
+    </table>
+  </div>

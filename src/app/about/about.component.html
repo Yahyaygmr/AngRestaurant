@@ -1,0 +1,22 @@
+<section id="hakkimizda" class="container my-5">
+  <h2 class="text-center">Hakkımızda</h2>
+  <p class="text-center">Lezzet Durağı, yıllardır en kaliteli pizza ve hamburgerleri müşterileriyle buluşturuyor.
+    Taptaze malzemelerle hazırlanan menümüz, damak tadınıza hitap edecek.</p>
+  <hr>
+  <p>{{about}}</p>
+  <hr>
+  <div>
+    <ul *ngFor="let item of abouts">
+      <li>{{item}}</li>
+    </ul>
+  </div>
+  <hr>
+  <div>
+    <ul *ngFor="let item of aboutModels">
+      <li>{{item.id}}</li>
+      <li>{{item.title}}</li>
+      <li>{{item.descripton}}</li>
+      <hr>
+    </ul>
+  </div>
+</section>
